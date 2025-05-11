@@ -1,4 +1,4 @@
-#Pooshan Raul - Technical Portfolio
+# Pooshan Raul - Technical Portfolio
 
 This repository hosts my personal engineering portfolio, showcasing my work in CAD, FEA, mechanical design, and multidisciplinary simulation across motorsports, process engineering, and campervan manufacturing.
 

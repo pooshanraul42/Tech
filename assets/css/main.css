@@ -1717,3 +1717,28 @@ section,
 .bi-gear-wide {
   color: #0048A2 !important; /* Navy Blue */
 }
+
+/* Force uniform height across portfolio cards */
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.portfolio-image img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.portfolio-content p {
+  min-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

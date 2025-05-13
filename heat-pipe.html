@@ -97,109 +97,108 @@
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title">
-      <div class="breadcrumbs">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#"><i class="bi bi-house"></i> Home</a></li>
-            <li class="breadcrumb-item"><a href="#">Category</a></li>
-            <li class="breadcrumb-item active current">Portfolio Details</li>
-          </ol>
-        </nav>
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section">
+    <div class="container" data-aos="fade-up">
+
+      <!-- Project Overview -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/heat-pipe/simple_hp.png" class="img-fluid mb-2" alt="Heat Pipe Overview">
+        </div>
+        <div class="col-md-6">
+          <h4>Project Overview</h4>
+          <p>This project presents a CFD-based evaluation of a novel heat pipe design intended for high-temperature fusion environments. The simulation was performed using a 2D axisymmetric model in ANSYS Fluent, as part of a Master’s-level dissertation.</p>
+        </div>
       </div>
 
-      <div class="title-wrapper">
-        <h1>Portfolio Details</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+      <!-- Working Principle (flipped) -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/heat-pipe/capillary_full.png" class="img-fluid mb-2" alt="Capillary Detail">
+        </div>
+        <div class="col-md-6">
+          <h4>Working Principle</h4>
+          <p>This heat pipe uses a liquid metal wick that evaporates at the hot end and condenses at the cooler end, recirculating via capillary action. This setup enables passive thermal regulation under fusion-relevant conditions.</p>
+        </div>
       </div>
-    </div><!-- End Page Title -->
 
-     <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-details" class="portfolio-details section">
-      <div class="container" data-aos="fade-up">
-
-        <!-- Project Overview -->
-        <div class="row mb-5">
-          <div class="col-12">
-            <h2>Fusion-Relevant Heat Pipe Simulation</h2>
-            <p>This project presents a CFD-based evaluation of a novel heat pipe design intended for high-temperature fusion environments. The simulation was performed using a 2D axisymmetric model in ANSYS Fluent, as part of a Master’s-level dissertation.</p>
-          </div>
+      <!-- Geometry Idealisation -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/heat-pipe/axisymmetric_imprint.png" class="img-fluid mb-2" alt="Axisymmetric Geometry">
         </div>
-
-                <!-- Geometry -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/heat-pipe/simple_hp.png" class="img-fluid mb-2" alt="Simplified Geometry">
-          </div>
-          <div class="col-md-6">
-            <h4>Working Principle</h4>
-            <p>This heat pipe has a liquid metal wick which would evaporate at the hot end and dissipate heat at the cooler end and flow back to the hot end as a liquid through capilary action.  </p>
-          </div>
+        <div class="col-md-6">
+          <h4>2D Geometry Simplification</h4>
+          <p>The original 3D model was idealized into a 2D axisymmetric domain to reduce computational load while preserving thermal-fluid behavior. Heat flux zones were created using geometric imprints.</p>
         </div>
-
-        <!-- Geometry idealised-->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/heat-pipe/axisymmetric_imprint.png" class="img-fluid mb-2" alt="Simplified Geometry">
-          </div>
-          <div class="col-md-6">
-            <h4>2D Geometry Simplification</h4>
-            <p>The original 3D model was simplified to a 2D axisymmetric domain to reduce computational load while preserving thermal-fluid behavior. Heat flux zones were defined via imprinting techniques.</p>
-          </div>
-        </div>
-
-        <!-- Mesh -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/heat-pipe/mesh_refined.png" class="img-fluid mb-2" alt="Mesh View">
-          </div>
-          <div class="col-md-6">
-            <h4>Mesh Refinement & Quality</h4>
-            <p>Element size was optimized for resolving gradients without excessive cell count.</p>
-          </div>
-        </div>
-
-        <!-- Mesh Metrics -->
-        <div class="row mb-4">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/heat-pipe/mesh_metrics_1.png" class="img-fluid" alt="Mesh Metric 1">
-            <h4>Mesh Metrics</h4>
-            <p>Mesh metrics were used to analyse the quality of the mesh and to reduce the soluiton divergence. Higher order 2D quadrilateral elemets were used.</p>
-          </div>
-        </div>
-
-        <!-- Mesh Statistics -->
-        <div class="row mb-4">
-          <div class="col-12">
-            <img src="assets/img/portfolio/heat-pipe/mesh_stats.png" class="img-fluid" alt="Mesh Stats">
-            <h4>Mesh Statistics</h4>
-            <p>Mesh staistics were used for determining ideal element size while considering the mesh quality and the number of elements for the computataional demands.</p>
-          </div>
-        </div>
-
-        <!-- Results -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/heat-pipe/temp_zoom_1.png" class="img-fluid mb-2" alt="Temp Zoom 1">
-          </div>
-          <div class="col-md-6">
-            <h4>Temperature Contours</h4>
-            <p>Although the full fluid-fluid interface did not converge, the resulting temperature distribution closely matched COMSOL-based results from TU/e researchers, supporting the accuracy of the simplified model.</p>
-          </div>
-        </div>
-
-        <!-- Conclusion -->
-        <div class="row mt-4">
-          <div class="col-12">
-            <h4>Conclusion</h4>
-            <p>This study demonstrates the feasibility of using a reduced-order 2D thermal-fluid model for evaluating novel heat pipe concepts. Further work may integrate phase change and surface tension modeling to simulate condensation and evaporation cycles in detail.</p>
-          </div>
-        </div>
-
       </div>
-    </section><!-- /Portfolio Details Section -->
 
+      <!-- Mesh Refinement (flipped) -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/heat-pipe/mesh_refined.png" class="img-fluid mb-2" alt="Mesh Refinement">
+        </div>
+        <div class="col-md-6">
+          <h4>Mesh Refinement & Quality</h4>
+          <p>Refined mesh was applied to regions of steep gradients including the evaporator and condenser ends. Higher-order 2D quadrilateral elements were used to maintain solution stability and convergence.</p>
+        </div>
+      </div>
+
+      <!-- Mesh Metrics -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/heat-pipe/mesh_metrics_1.png" class="img-fluid mb-2" alt="Mesh Metrics 1">
+        </div>
+        <div class="col-md-6">
+          <h4>Mesh Metrics</h4>
+          <p>Mesh metrics such as skewness and aspect ratio were assessed to maintain high quality throughout the simulation. These helped control divergence during iterations.</p>
+        </div>
+      </div>
+
+      <!-- Mesh Stats (flipped) -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/heat-pipe/mesh_stats.png" class="img-fluid mb-2" alt="Mesh Stats">
+        </div>
+        <div class="col-md-6">
+          <h4>Mesh Statistics</h4>
+          <p>The mesh convergence graph shows how the number of elements and element size affects computational efficiency. This optimization reduced solve time significantly.</p>
+        </div>
+      </div>
+
+      <!-- Simulation Results -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/heat-pipe/temp_zoom_1.png" class="img-fluid mb-2" alt="Temperature Zoom 1">
+        </div>
+        <div class="col-md-6">
+          <h4>Temperature Distribution</h4>
+          <p>Although full phase-coupled multiphase modeling did not converge due to interface instability, the temperature contours closely matched benchmark data from COMSOL models at TU/e, validating the approach.</p>
+        </div>
+      </div>
+
+      <!-- Second Temperature Plot (flipped) -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/heat-pipe/temp_zoom_2.png" class="img-fluid mb-2" alt="Temperature Zoom 2">
+        </div>
+        <div class="col-md-6">
+          <h4>Cross-Validation</h4>
+          <p>The high-resolution zoom confirms that the simplified Fluent model reproduces realistic thermal gradients despite lacking explicit liquid-vapor interface modeling.</p>
+        </div>
+      </div>
+
+      <!-- Conclusion -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <h4>Conclusion</h4>
+          <p>This study demonstrates the effectiveness of a reduced-order CFD model in predicting fusion-relevant thermal transport. Future development can incorporate phase change via VOF or OpenFOAM to further expand fidelity.</p>
+        </div>
+      </div>
+
+    </div>
+  </section><!-- /Portfolio Details Section -->
 
   </main>
 

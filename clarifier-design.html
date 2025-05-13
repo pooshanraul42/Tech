@@ -116,74 +116,109 @@
     </div><!-- End Page Title -->
 
     <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
+<section id="portfolio-details" class="portfolio-details section">
+  <div class="container" data-aos="fade-up">
 
-      <div class="container" data-aos="fade-up">
-
-        <div class="row gy-4 g-lg-5">
-          <div class="col-lg-6">
-            <img src="assets/img/portfolio/portfolio-1.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-10.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-7.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-4.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-5.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-11.webp" class="img-fluid mb-4" alt="">
-            <img src="assets/img/portfolio/portfolio-8.webp" class="img-fluid mb-4" alt="">
-          </div>
-
-          <div class="col-lg-6">
-
-            <div class="position-sticky" style="top: 40px">
-              <div class="portfolio-description">
-                <h2>This is an example of portfolio details</h2>
-                <p>
-                  Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-                </p>
-                <p>
-                  Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et. Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt molestiae laboriosam.
-                </p>
-
-                <div class="testimonial-item">
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                  <div>
-                    <img src="assets/img/person/person-f-5.webp" class="testimonial-img" alt="">
-                    <h3>Sara Wilsson</h3>
-                    <h4>Designer</h4>
-                  </div>
-                </div>
-
-                <p>
-                  Impedit ipsum quae et aliquid doloribus et voluptatem quasi. Perspiciatis occaecati earum et magnam animi. Quibusdam non qui ea vitae suscipit vitae sunt. Repudiandae incidunt cumque minus deserunt assumenda tempore. Delectus voluptas necessitatibus est.
-                </p>
-
-                <p>
-                  Sunt voluptatum sapiente facilis quo odio aut ipsum repellat debitis. Molestiae et autem libero. Explicabo et quod necessitatibus similique quis dolor eum. Numquam eaque praesentium rem et qui nesciunt.
-                </p>
-
-              </div>
-
-              <div class="portfolio-info mt-5">
-                <h3>Project information</h3>
-                <ul>
-                  <li><strong>Category</strong> Web design</li>
-                  <li><strong>Client</strong> ASU Company</li>
-                  <li><strong>Project date</strong> 01 March, 2020</li>
-                  <li><strong>Project URL</strong> <a href="#">www.example.com</a></li>
-                  <li><a href="#" class="btn-visit align-self-start">Visit Website</a></li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
+    <!-- Overview -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="assets/img/portfolio/clarifier-design/CAD/clarifier_assembly.png" class="img-fluid mb-2" alt="Clarifier Assembly">
       </div>
+      <div class="col-md-6">
+        <h4>Clarifier Walkway Assembly</h4>
+        <p>This project involved the structural design and simulation of a clarifier scraper walkway mechanism. The CAD model was developed to suit integration within the tank and evaluated under service loads using FEA.</p>
+      </div>
+    </div>
 
-    </section><!-- /Portfolio Details Section -->
+    <!-- Civil Integration -->
+    <div class="row align-items-center flex-md-row-reverse mb-5">
+      <div class="col-md-6">
+        <img src="assets/img/portfolio/clarifier-design/CAD/civil_assembly.png" class="img-fluid mb-2" alt="Civil Tank Integration">
+      </div>
+      <div class="col-md-6">
+        <h4>Tank Interface & Layout</h4>
+        <p>The walkway was modeled in the context of the clarifier tank envelope to ensure proper clearance and installation alignment. It shows structural coordination with civil concrete elements.</p>
+      </div>
+    </div>
+
+    <!-- Mesh -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="assets/img/portfolio/clarifier-design/FEA/mesh.png" class="img-fluid mb-2" alt="FEA Mesh">
+      </div>
+      <div class="col-md-6">
+        <h4>FEA Setup & Mesh Refinement</h4>
+        <p>The walkway truss was meshed using beam and shell elements. Additional refinement was applied at the base connection and load-bearing members to increase convergence accuracy.</p>
+      </div>
+    </div>
+
+    <!-- Load Cases -->
+    <div class="row align-items-center flex-md-row-reverse mb-5">
+      <div class="col-md-6">
+        <img src="assets/img/portfolio/clarifier-design/FEA/load.png" class="img-fluid mb-2" alt="Load Setup">
+      </div>
+      <div class="col-md-6">
+        <h4>Load Cases</h4>
+        <p>Service loads included self-weight and maintenance live load. Constraints were applied to match real-world fixed base plate anchorage conditions.</p>
+      </div>
+    </div>
+
+    <!-- Stress -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="assets/img/portfolio/clarifier-design/FEA/eqstress.png" class="img-fluid mb-2" alt="Von Mises Stress">
+      </div>
+      <div class="col-md-6">
+        <h4>Stress Analysis</h4>
+        <p>Von Mises stress distribution indicated maximum values near welded joints and bracing cutouts. These values remained under material yield limits, confirming safe design.</p>
+      </div>
+    </div>
+
+    <!-- Deformation -->
+    <div class="row align-items-center flex-md-row-reverse mb-5">
+      <div class="col-md-6">
+        <img src="assets/img/portfolio/clarifier-design/FEA/def.png" class="img-fluid mb-2" alt="Deformation Result">
+      </div>
+      <div class="col-md-6">
+        <h4>Deformation Behavior</h4>
+        <p>Maximum deformation under service load was within acceptable deflection limits (L/250), ensuring user safety and platform stability.</p>
+      </div>
+    </div>
+
+    <!-- Factor of Safety -->
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="assets/img/portfolio/clarifier-design/FEA/fos.png" class="img-fluid mb-2" alt="Factor of Safety">
+      </div>
+      <div class="col-md-6">
+        <h4>Factor of Safety</h4>
+        <p>FOS contours highlight reinforcement regions. The minimum safety factor was greater than 2 across all members under static loading conditions.</p>
+      </div>
+    </div>
+
+    <!-- GA Drawing -->
+    <div class="row align-items-center flex-md-row-reverse mb-5">
+      <div class="col-md-6">
+        <img src="assets/img/portfolio/clarifier-design/CAD/clarifier_drawing.png" class="img-fluid mb-2" alt="GA Drawing">
+      </div>
+      <div class="col-md-6">
+        <h4>Manufacturing Drawing</h4>
+        <p>The final GA drawing includes member schedules, weld notes, and fabrication tolerances in a detailed production-ready format.</p>
+      </div>
+    </div>
+
+    <!-- Conclusion -->
+    <div class="row mt-4">
+      <div class="col-12">
+        <h4>Conclusion</h4>
+        <p>This clarifier walkway project covered 3D modeling, civil coordination, and structural verification through FEA. The final assembly drawing was handed off for fabrication and installation on-site.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!-- /Portfolio Details Section -->
 
   </main>
 

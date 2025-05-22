@@ -61,125 +61,174 @@
     </div>
   </header>
 
-  <main class="main">
+<main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title">
-      <div class="title-wrapper text-center">
-        <h1>3D Piping & Equipment Layout – Solvent Recovery Plant</h1>
-        <p>Designed using SolidWorks, this project illustrates equipment placement, piping routes, and mechanical integration for an industrial solvent recovery process.</p>
+  <!-- Page Title -->
+  <div class="page-title">
+    <div class="title-wrapper text-center">
+      <h1>Pressure Vessel Design & FEA</h1>
+      <p>Stress analysis and validation of a 500L vessel with nozzle loads and thermal pressure, verified using ANSYS per ASME Section VIII Div. 2.</p>
+    </div>
+  </div><!-- End Page Title -->
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section">
+    <div class="container" data-aos="fade-up">
+
+      <!-- Intro -->
+      <div class="row mb-5">
+        <div class="col-lg-12">
+          <p class="fs-5">
+            This project involved the design and validation of a 500L pressure vessel subjected to 3 kg/cm² internal pressure and 150°C operating temperature. The analysis was conducted using ANSYS Mechanical, following ASME Section VIII Div. 2 rules. Loads included internal pressure, nozzle thrusts and moments, self-weight, and thermal expansion. Results were validated through stress linearization and compared against ASME allowable limits.
+          </p>
+        </div>
       </div>
-    </div><!-- End Page Title -->
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
-      <div class="container" data-aos="fade-up">
-
-        <!-- Intro -->
-        <div class="row mb-5">
-          <div class="col-lg-12">
-            <p class="fs-5">
-              The project involved developing a modular equipment layout for a solvent recovery plant. Emphasis was placed on accessibility, equipment spacing, and clean routing of process pipelines. Core design principles included adherence to space management, equipment orientation, and feasibility for manufacturing, installation and maintenance. All models were created using SolidWorks.
-            </p>
-          </div>
+      <!-- CAD Model -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/pressure-vessel/3DISO.png" class="img-fluid rounded shadow-sm mb-3" alt="3D CAD Model">
         </div>
-    
-        <!-- Project Overview -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-12">
-            <h2>Pressure Vessel Design & FEA</h2>
-            <p>This project involved designing and analyzing a pressurised tank with 10% torispherical dishends under internal pressure, in accordance with ASME BPVC Section VIII Division 2 guidelines. The vessel was evaluated for structural safety under operational loads using ANSYS Mechanical.</p>
-          </div>
+        <div class="col-md-6">
+          <h4>3D CAD Model</h4>
+          <p>
+            The vessel was modeled in SolidWorks with a cylindrical shell, torispherical dish ends, and six nozzle connections. Geometric simplifications such as fillets and chamfers were excluded to ensure a mesh-friendly model for FEA.
+          </p>
+          <ul>
+            <li><strong>Volume:</strong> 500L | <strong>Thickness:</strong> 6 mm</li>
+            <li><strong>Nozzles:</strong> Handhole, Vent, Drain, Vacuum, Spare, View Glass</li>
+            <li><strong>Dish Ends:</strong> 10% Torispherical</li>
+          </ul>
         </div>
-    
-        <!-- CAD Model -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/pressure-vessel/3DISO.png" class="img-fluid rounded shadow-sm mb-3" alt="3D CAD Model">
-          </div>
-          <div class="col-md-6">
-            <h4>3D CAD Model</h4>
-            <p>The vessel includes a cylindrical shell, hemispherical heads, and multiple nozzle openings. Modeled in SolidWorks, exported as STEP for meshing and simulation.</p>
-          </div>
-        </div>
-    
-        <!-- Meshing -->
-        <div class="row align-items-center flex-md-row-reverse mb-5">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/pressure-vessel/mesh.png" class="img-fluid rounded shadow-sm mb-3" alt="Mesh Overview">
-          </div>
-          <div class="col-md-6">
-            <h4>Mesh Strategy</h4>
-            <p>A tetrahedral mesh with refinement around nozzle junctions and fillets was applied. The global element size was set to X mm with inflation layers at pressure-facing surfaces.</p>
-          </div>
-        </div>
-    
-        <!-- Loadings -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/pressure-vessel/PreProcess.png" class="img-fluid rounded shadow-sm mb-3" alt="Load Conditions">
-          </div>
-          <div class="col-md-6">
-            <h4>Loading & Boundary Conditions</h4>
-            <p>The vessel was subjected to internal pressure of XX MPa with fixed support constraints at nozzle flanges. Radial loads applied on nozzles to simulate piping reactions.</p>
-          </div>
-        </div>
-    
-        <!-- Stress Results -->
-        <div class="row align-items-center flex-md-row-reverse mb-5">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/pressure-vessel/Eqstress.png" class="img-fluid rounded shadow-sm mb-3" alt="Von Mises Stress">
-          </div>
-          <div class="col-md-6">
-            <h4>Stress Results</h4>
-            <p>Von Mises stress distribution highlights critical regions at nozzle-shell junctions. Peak stress remains below allowable limits for SA-516 Gr.70 material.</p>
-          </div>
-        </div>
-    
-        <!-- Deformation -->
-        <div class="row align-items-center mb-5">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/pressure-vessel/totaldeform.png" class="img-fluid rounded shadow-sm mb-3" alt="Deformation Plot">
-          </div>
-          <div class="col-md-6">
-            <h4>Total Deformation</h4>
-            <p>Maximum deflection observed at unsupported nozzle ends is under 1.2 mm. Structural integrity and stiffness are confirmed.</p>
-          </div>
-        </div>
-    
-        <!-- Stress Linearization -->
-        <div class="row align-items-center flex-md-row-reverse mb-5">
-          <div class="col-md-6">
-            <img src="assets/img/portfolio/pressure-vessel/LinearisedStress1.png" class="img-fluid rounded shadow-sm mb-3" alt="Stress Linearization">
-          </div>
-          <div class="col-md-6">
-            <h4>Stress Linearization</h4>
-            <p>Linearized stresses across a critical path show membrane + bending components. Compared with allowable limits per ASME Appendix 5, confirming safe operation.</p>
-          </div>
-        </div>
-
-        <!-- Info Box -->
-        <div class="row mt-5">
-          <div class="col-lg-6 offset-lg-3">
-            <div class="portfolio-info p-4 bg-light shadow-sm rounded">
-              <h3 class="text-center">Project Information</h3>
-              <ul class="list-unstyled">
-                <li><strong>Project Date:</strong> September 2021</li>
-                <li><strong>Software:</strong> SolidWorks</li>
-                <li><strong>Category:</strong> Process and extraction</li>
-                <li><strong>Focus:</strong> Layout Planning, Piping Design, Equipment Integration</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <!-- /Info Box -->
-    
-
-
       </div>
-    </section>
-  </main>
 
+      <!-- Meshing -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/pressure-vessel/mesh.png" class="img-fluid rounded shadow-sm mb-3" alt="Mesh Overview">
+        </div>
+        <div class="col-md-6">
+          <h4>Mesh Strategy</h4>
+          <p>
+            A multizone mesh with sweep method was applied to sweepable bodies. Mesh refinement was provided near nozzle junctions with at least two elements across thickness for accuracy.
+          </p>
+          <ul>
+            <li><strong>Element Type:</strong> SOLID186 (Quadratic, 20-node)</li>
+            <li><strong>Control:</strong> Local edge sizing & method controls</li>
+            <li><strong>Validation:</strong> Skewness, aspect ratio, and Jacobian</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Loading -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/pressure-vessel/PreProcess.png" class="img-fluid rounded shadow-sm mb-3" alt="Pre-processing Setup">
+        </div>
+        <div class="col-md-6">
+          <h4>Loading & Boundary Conditions</h4>
+          <p>
+            Internal pressure of 0.2942 MPa was applied along with self-weight and nozzle loads as per WRC guidelines. Nozzle ends were constrained with radial and bending moments.
+          </p>
+          <ul>
+            <li><strong>Supports:</strong> Fixed base and flanges</li>
+            <li><strong>Loads:</strong> Pressure, nozzle thrusts, gravity</li>
+            <li><strong>Moments:</strong> Applied on cylindrical and spherical shells</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stress Results -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/pressure-vessel/Eqstress.png" class="img-fluid rounded shadow-sm mb-3" alt="Von Mises Stress">
+        </div>
+        <div class="col-md-6">
+          <h4>Stress Results</h4>
+          <p>
+            Von Mises stress was highest at the nozzle-shell intersections. Stress values were below yield limits for SA-516 Gr.70 and showed safe margins for pressure containment.
+          </p>
+          <ul>
+            <li><strong>Max Stress:</strong> 159.85 MPa</li>
+            <li><strong>Material Allowable:</strong> 235.5 MPa (1.5 × Sm)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Deformation -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/pressure-vessel/totaldeform.png" class="img-fluid rounded shadow-sm mb-3" alt="Total Deformation">
+        </div>
+        <div class="col-md-6">
+          <h4>Total Deformation</h4>
+          <p>
+            Deformation primarily occurred at unsupported nozzles and dish crown. Maximum deflection recorded was under 1.2 mm, verifying structural rigidity.
+          </p>
+          <ul>
+            <li><strong>Peak Deflection:</strong> 1.14 mm</li>
+            <li><strong>Location:</strong> At nozzle neck edges</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stress Linearization -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/pressure-vessel/LinearisedStress1.png" class="img-fluid rounded shadow-sm mb-3" alt="Stress Linearization Plot">
+          <small class="text-muted d-block mt-2">Stress linearization result with tabular breakdown across shell thickness.</small>
+        </div>
+        <div class="col-md-6">
+          <h4>Stress Linearization</h4>
+          <p>
+            A classification line was plotted across shell thickness at the nozzle intersection. Membrane and bending stress components were extracted and compared against allowable limits as per ASME Div. 2 Appendix 5.
+          </p>
+          <ul>
+            <li><strong>Max Linearized Stress (Pl + Pb):</strong> 119.74 MPa</li>
+            <li><strong>Allowable:</strong> 1.5 × Sm = 235.5 MPa</li>
+            <li><strong>Result:</strong> ✔ Pass</li>
+          </ul>
+        </div>
+      </div>
+
+ <!-- Pressure Vessel Project Summary -->
+ <div class="row justify-content-center mb-5">
+  <div class="col-lg-10">
+    <div class="p-4 bg-light shadow-sm rounded text-center">
+      <h4 class="mb-3">Project Summary & Analysis Workflow</h4>
+      <p class="mb-0 fs-6">
+        As part of my bachelor's thesis, I modeled and analyzed a pressure vessel subject to internal pressure, temperature, and nozzle loading. The vessel was validated as per ASME Section VIII Division 2 using linearized stress components and comparison against allowable stress criteria.
+        <br><br>
+        <strong>
+          CAD Modeling in SolidWorks → Geometry Cleanup → Import to ANSYS Workbench → Mesh Refinement → Load Application → Stress Linearization → ASME Code Validation → Experimental Hydrotesting
+        </strong>
+        <br><br>
+        <strong>Material Validation:</strong> Properties were selected from ASME Section II, Part D, with yield strength values at temperature referenced from Table Y-1. Allowable stress limits were determined per Annex 3-A (1.5×Sm or Sy), ensuring conformance with plastic collapse criteria under Division 2 rules.
+        <br><br>
+        This approach confirmed structural feasibility and demonstrated proficiency in both pressure vessel design standards and simulation workflow.
+      </p>
+    </div>
+  </div>
+ </div>
+
+      <!-- Info Box -->
+      <div class="row mt-5">
+        <div class="col-lg-6 offset-lg-3">
+          <div class="portfolio-info p-4 bg-light shadow-sm rounded">
+            <h3 class="text-center">Project Information</h3>
+            <ul class="list-unstyled">
+              <li><strong>Project Date:</strong> September 2021</li>
+              <li><strong>Software:</strong> SolidWorks, ANSYS Mechanical</li>
+              <li><strong>Category:</strong> Pressure Equipment Design</li>
+              <li><strong>Focus Areas:</strong> FEA, ASME Code Compliance, Stress Linearization, Advanced Meshing</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+ </main>
 
 
  <!-- Contact Section -->

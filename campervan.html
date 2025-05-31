@@ -280,7 +280,7 @@
 <div class="container">
   <div class="copyright text-center">
       <p class="footer-text">
-          <strong>© <span id="year"></span> Pooshan Raul | Built With Passion</strong>
+          <strong>© <span id="year"></span> Pooshan Raul | Engineering Beyond the Screen</strong>
       </p>
   </div>
 </div>
@@ -305,6 +305,18 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+    <!-- Protection Script -->
+ <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('DOMContentLoaded', () => {
+    const imgs = document.querySelectorAll('img');
+    imgs.forEach(img => {
+      img.setAttribute('draggable', false);
+      img.addEventListener('dragstart', e => e.preventDefault());
+    });
+  });
+ </script>
 
 </body>
 

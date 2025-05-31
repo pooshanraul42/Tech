@@ -411,6 +411,18 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+ <!-- Protection Script -->
+ script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  document.addEventListener('DOMContentLoaded', () => {
+    const imgs = document.querySelectorAll('img');
+    imgs.forEach(img => {
+      img.setAttribute('draggable', false);
+      img.addEventListener('dragstart', e => e.preventDefault());
+    });
+  });
+</script>
+
 </body>
 
 </html>

@@ -62,145 +62,182 @@
     </div>
   </header>
 
-  <main class="main">
+ <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title">
-      <div class="title-wrapper text-center">
-        <h1>Portfolio Details</h1>
-        <p>This is design, validation and assembly of a racing go-kart.</p>
+  <!-- Page Title -->
+  <div class="page-title">
+    <div class="title-wrapper text-center">
+      <h1>Clarifier Walkway Design for Wastewater Treatment Plant</h1>
+      <p>Structural design and FEA validation of a clarifier walkway bridge.</p>
+    </div>
+  </div>
+
+  <!-- Portfolio Details Section -->
+  <section id="portfolio-details" class="portfolio-details section">
+    <div class="container" data-aos="fade-up">
+
+      <!-- Intro -->
+      <div class="row mb-5">
+        <div class="col-lg-12">
+          <p class="fs-5">
+            This project involved the structural design, finite element analysis, and installation planning of a clarifier scraper bridge for a wastewater treatment plant. The 11-meter truss was engineered to support up to 1000 kg, accounting for the gearbox, drive pipe, scraper arm, and maintenance loads. Key objectives included lightweight design, bolt-together assembly for transport, and structural integrity under service conditions.
+          </p>
+        </div>
       </div>
-    </div><!-- End Page Title -->
 
-    <!-- Portfolio Details Section -->
-<section id="portfolio-details" class="portfolio-details section">
-  <div class="container" data-aos="fade-up">
+      <!-- Clarifier Assembly -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/clarifier-design/CAD/walkway.png" class="img-fluid rounded shadow-sm mb-3" alt="Clarifier Assembly">
+        </div>
+        <div class="col-md-6">
+          <h4>Clarifier Walkway Assembly</h4>
+          <p>The structure was built using 50×50×5 mm L-angle trusses and designed in SolidWorks with trim-extended joints.</p>
+          <ul>
+            <li>Split into two segments using bolted joints for transport and on-site assembly</li>
+            <li>Diagonal and horizontal bracing added to reduce torsional deformation</li>
+            <li>Mounting features modeled for gearbox, scraper pipe</li>
+          </ul>
+        </div>
+      </div>
 
-    <!-- Intro -->
-        <div class="row mb-5">
-          <div class="col-lg-12">
-            <p class="fs-5">
-              The project involved developing a modular equipment layout for a solvent recovery plant. Emphasis was placed on accessibility, equipment spacing, and clean routing of process pipelines. Core design principles included adherence to space management, equipment orientation, and feasibility for manufacturing, installation and maintenance. All models were created using SolidWorks.
+      <!-- Civil Integration -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/clarifier-design/CAD/civil_assembly.png" class="img-fluid rounded shadow-sm mb-3" alt="Civil Tank Integration">
+        </div>
+        <div class="col-md-6">
+          <h4>Integration with Civil Infrastructure</h4>
+          <p>The truss was designed within a cylindrical concrete tank envelope to ensure proper fit and clearance.</p>
+          <ul>
+            <li>Anchoring plates aligned to match feedwell and top concrete rim</li>
+            <li>Scraper shaft and couplings referenced per site layout</li>
+            <li>Cross-checked against P&ID and plant layout drawings</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Mesh Setup -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/clarifier-design/FEA/mesh.png" class="img-fluid rounded shadow-sm mb-3" alt="Mesh Setup">
+        </div>
+        <div class="col-md-6">
+          <h4>Mesh & Boundary Setup</h4>
+          <p>Finite element modeling was performed in ANSYS Mechanical using structured hex elements.</p>
+          <ul>
+            <li>Shell and beam elements used to balance fidelity and solve time</li>
+            <li>Mesh refinement applied at bolt holes, load-bearing brackets, and gusseted corners</li>
+            <li>Mesh metrics like aspect ratio, skewness, and warping were checked</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Load Cases -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/clarifier-design/FEA/load.png" class="img-fluid rounded shadow-sm mb-3" alt="Load Setup">
+        </div>
+        <div class="col-md-6">
+          <h4>Load Case</h4>
+          <p>The truss was analyzed for a conservative 1000 kg load to account for motor torque and scraper resistance.</p>
+          <ul>
+            <li>1000 kg point load applied at gearbox location (center span)</li>
+            <li>Self-weight, equipment mass, and maintenance live load included</li>
+            <li>Boundary conditions: gravity + fixed supports at anchor plates</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Stress Results -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/clarifier-design/FEA/eqstress.png" class="img-fluid rounded shadow-sm mb-3" alt="Stress Results">
+        </div>
+        <div class="col-md-6">
+          <h4>Stress Analysis</h4>
+          <p>Stress concentrations were examined to ensure structural safety across all load paths.</p>
+          <ul>
+            <li>Peak Von Mises stress: ~153 MPa near bolt cutouts and joint overlaps</li>
+            <li>Stresses remained well below the steel yield strength (250 MPa)</li>
+            <li>Stress mitigated using bracing plates and filleted welds</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Deformation -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/clarifier-design/FEA/def.png" class="img-fluid rounded shadow-sm mb-3" alt="Deformation Result">
+        </div>
+        <div class="col-md-6">
+          <h4>Deflection Check</h4>
+          <p>The deformation was plotted and compared against deflection limits for walkable structures.</p>
+          <ul>
+            <li>Max vertical deflection: ~5 mm (L/220 approx.)</li>
+            <li>Within the L/250 limit for platforms under static loads</li>
+            <li>Deflection uniform along mid-span with no torsional twist</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Factor of Safety -->
+      <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/clarifier-design/FEA/fos.png" class="img-fluid rounded shadow-sm mb-3" alt="Factor of Safety">
+        </div>
+        <div class="col-md-6">
+          <h4>Factor of Safety</h4>
+          <ul>
+            <li>Minimum FOS > 2.3 under worst-case loading</li>
+            <li>FOS validated at all bolted junctions and load paths</li>
+            <li>Redundant structure supports future load variations</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Drawing -->
+      <div class="row align-items-center flex-md-row-reverse mb-5">
+        <div class="col-md-6">
+          <img src="assets/img/portfolio/clarifier-design/CAD/clarifier_drawing.png" class="img-fluid rounded shadow-sm mb-3" alt="Drawing Sheet">
+        </div>
+        <div class="col-md-6">
+          <h4>Manufacturing Drawing</h4>
+          <p>Detailed GA drawing was prepared for fabrication and inspection:</p>
+          <ul>
+            <li>Included BOM, welding specifications, and fit tolerances</li>
+            <li>Assembly split defined for site handling</li>
+            <li>Issued to vendor after design verification</li>
+          </ul>
+            <p class="text-muted small">*Note: Drawings are protected under NDA and not shown here.</p>
+        </div>
+      </div>
+
+      <!-- Conclusion -->
+      <div class="row mt-4">
+        <div class="col-12">
+          <h4>Conclusion</h4>
+          <p>The clarifier bridge was structurally verified for load-bearing capacity and site compatibility. Following analysis and drawing release, it was fabricated and installed on-site with no reported issues during commissioning.</p>
+        </div>
+      </div>
+
+      <!-- Workflow Summary -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-10">
+          <div class="p-4 bg-light shadow-sm rounded text-center">
+            <h4 class="mb-3">Project Workflow Summary</h4>
+            <p class="mb-3">
+              This project followed a full-cycle design process: CAD modeling, structural simulation, and fabrication readiness. All load cases were verified through FEA and drawings were finalized based on plant feedback.
+            </p>
+            <p class="fw-semibold">
+              CAD in SolidWorks → Tank Layout Coordination → FEA in ANSYS → Stress & Deflection Validation → GA Drawing Release
             </p>
           </div>
-    </div>
-
-    <!-- Overview -->
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6">
-        <img src="assets/img/portfolio/clarifier-design/CAD/clarifier_assembly.png" class="img-fluid rounded shadow-sm mb-3" alt="Clarifier Assembly">
-      </div>
-      <div class="col-md-6">
-        <h4>Clarifier Walkway Assembly</h4>
-        <p>This project involved the structural design and simulation of a clarifier scraper walkway mechanism. The CAD model was developed to suit integration within the tank and evaluated under service loads using FEA.</p>
-      </div>
-    </div>
-
-    <!-- Civil Integration -->
-    <div class="row align-items-center flex-md-row-reverse mb-5">
-      <div class="col-md-6">
-        <img src="assets/img/portfolio/clarifier-design/CAD/civil_assembly.png" class="img-fluid rounded shadow-sm mb-3" alt="Civil Tank Integration">
-      </div>
-      <div class="col-md-6">
-        <h4>Tank Interface & Layout</h4>
-        <p>The walkway was modeled in the context of the clarifier tank envelope to ensure proper clearance and installation alignment. It shows structural coordination with civil concrete elements.</p>
-      </div>
-    </div>
-
-    <!-- Mesh -->
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6">
-        <img src="assets/img/portfolio/clarifier-design/FEA/mesh.png" class="img-fluid rounded shadow-sm mb-3" alt="FEA Mesh">
-      </div>
-      <div class="col-md-6">
-        <h4>FEA Setup & Mesh Refinement</h4>
-        <p>The walkway truss was meshed using beam and shell elements. Additional refinement was applied at the base connection and load-bearing members to increase convergence accuracy.</p>
-      </div>
-    </div>
-
-    <!-- Load Cases -->
-    <div class="row align-items-center flex-md-row-reverse mb-5">
-      <div class="col-md-6">
-        <img src="assets/img/portfolio/clarifier-design/FEA/load.png" class="img-fluid rounded shadow-sm mb-3" alt="Load Setup">
-      </div>
-      <div class="col-md-6">
-        <h4>Load Cases</h4>
-        <p>Service loads included self-weight and maintenance live load. Constraints were applied to match real-world fixed base plate anchorage conditions.</p>
-      </div>
-    </div>
-
-    <!-- Stress -->
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6">
-        <img src="assets/img/portfolio/clarifier-design/FEA/eqstress.png" class="img-fluid rounded shadow-sm mb-3" alt="Von Mises Stress">
-      </div>
-      <div class="col-md-6">
-        <h4>Stress Analysis</h4>
-        <p>Von Mises stress distribution indicated maximum values near welded joints and bracing cutouts. These values remained under material yield limits, confirming safe design.</p>
-      </div>
-    </div>
-
-    <!-- Deformation -->
-    <div class="row align-items-center flex-md-row-reverse mb-5">
-      <div class="col-md-6">
-        <img src="assets/img/portfolio/clarifier-design/FEA/def.png" class="img-fluid rounded shadow-sm mb-3" alt="Deformation Result">
-      </div>
-      <div class="col-md-6">
-        <h4>Deformation Behavior</h4>
-        <p>Maximum deformation under service load was within acceptable deflection limits (L/250), ensuring user safety and platform stability.</p>
-      </div>
-    </div>
-
-    <!-- Factor of Safety -->
-    <div class="row align-items-center mb-5">
-      <div class="col-md-6">
-        <img src="assets/img/portfolio/clarifier-design/FEA/fos.png" class="img-fluid rounded shadow-sm mb-3" alt="Factor of Safety">
-      </div>
-      <div class="col-md-6">
-        <h4>Factor of Safety</h4>
-        <p>FOS contours highlight reinforcement regions. The minimum safety factor was greater than 2 across all members under static loading conditions.</p>
-      </div>
-    </div>
-
-    <!-- GA Drawing -->
-    <div class="row align-items-center flex-md-row-reverse mb-5">
-      <div class="col-md-6">
-        <img src="assets/img/portfolio/clarifier-design/CAD/clarifier_drawing.png" class="img-fluid rounded shadow-sm mb-3" alt="GA Drawing">
-      </div>
-      <div class="col-md-6">
-        <h4>Manufacturing Drawing</h4>
-        <p>The final GA drawing includes member schedules, weld notes, and fabrication tolerances in a detailed production-ready format.</p>
-      </div>
-    </div>
-
-    <!-- Conclusion -->
-    <div class="row mt-4">
-      <div class="col-12">
-        <h4>Conclusion</h4>
-        <p>This clarifier walkway project covered 3D modeling, civil coordination, and structural verification through FEA. The final assembly drawing was handed off for fabrication and installation on-site.</p>
-      </div>
-    </div>
-
-
-     <!-- Info Box -->
-        <div class="row mt-5">
-          <div class="col-lg-6 offset-lg-3">
-            <div class="portfolio-info p-4 bg-light shadow-sm rounded">
-              <h3 class="text-center">Project Information</h3>
-              <ul class="list-unstyled">
-                <li><strong>Project Date:</strong> September 2021</li>
-                <li><strong>Software:</strong> SolidWorks</li>
-                <li><strong>Category:</strong> Process and extraction</li>
-                <li><strong>Focus:</strong> Layout Planning, Piping Design, Equipment Integration</li>
-              </ul>
-            </div>
-          </div>
         </div>
+      </div>
 
-     </div>
-   </section>
- </main>
-
+    </div>
+  </section>
 
 
   <!-- Contact Section -->

@@ -2,4 +2,8 @@
 
 This repository hosts my personal engineering portfolio, showcasing my work in CAD, FEA, mechanical design, and multidisciplinary simulation across motorsports, process engineering, and campervan manufacturing.
 
-🚫 All content in this repository is the intellectual property of Pooshan Raul and affiliated companies. Reproduction, redistribution, or reuse of any part of this portfolio without explicit written permission is strictly prohibited.
+⚠️ **Usage Restriction**
+
+This repository is a personal portfolio. All content is protected under copyright and intended **only for viewing**. Downloading, copying, modifying, or reusing any content is **strictly prohibited** without written permission.
+
+📧 Contact: pooshanvraul42@gmail.com for any queries or collaboration.

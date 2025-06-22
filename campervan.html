@@ -67,8 +67,8 @@
   <!-- Page Title -->
   <div class="page-title">
     <div class="title-wrapper text-center">
-      <h1>Modular Campervan Furniture Kits – Design to Manufacturing & Installation</h1>
-      <p>Custom-designed modular furniture systems according to customer requirements. 3D modeled and optimized for DFM and DFA using SolidWorks and VCarve Pro.</p>
+      <h1>CAD-to-CNC Engineering of Campervan Furniture Kits</h1>
+      <p>Flat-pack kit conversion using SolidWorks and VCarve Pro. Focused on parametric modeling, joinery optimization, and toolpath generation for batch manufacturing.</p>
     </div>
   </div><!-- End Page Title -->
 
@@ -80,7 +80,7 @@
       <div class="row mb-5">
         <div class="col-lg-12">
           <p class="fs-5">
-            I work on the development of configurable modular furniture kits for various campervan platforms, including VW T6s and Crafters, Ford Transit Customs, and Mercedes-Benz Vitos and Sprinters. This project involves full-cycle design in SolidWorks, including geometric features, fastener integration, and panel-level design. I also generate CNC toolpaths in VCarve Pro and optimize each design for material efficiency, ease of assembly, and machine compatibility. 
+             Engineered flat-pack campervan kits from legacy DXFs by rebuilding full parametric 3D assemblies. Used SolidWorks for modular redesign and joinery setup, and VCarve Pro for toolpath generation. Focused on improving manufacturability, material efficiency, and repeatable installation. 
           </p>
         </div>
       </div>
@@ -94,12 +94,12 @@
           </figure>
         </div>
         <div class="col-md-6">
-          <h4>VW Crafter MWB Kit</h4>
-          <p>Tailored for high-utility camper builds, this large-format kit supports full-time vanlife with integrated kitchens, storage, and dual pull-out beds—streamlining onsite installation while maximizing interior mobility.</p>
+          <h4>3D CAD Reconstruction from 2D Kits</h4>
+          <p>Reconstructed CNC-ready 3D assemblies from raw 2D DXF files. Fully constrained part models allowed toolpath alignment, modular edits, and joinery placement while enabling layout-specific tweaks with minimal design time.</p>
           <ul>
-             <li>15mm birch ply modeled for CNC manufacturing</li>
-             <li>Assembly via cam-and-pin connectors with tolerance relief</li>
-             <li>Modular subassemblies allow components to be swapped per customer spec</li>
+             <li>Rebuilt parametric assemblies with joinery references and slot alignment</li>
+             <li>Established uniform design constraints across all variants</li>
+             <li>Streamlined the CAD-to-CAM flow using consistent export templates</li>
           </ul>
         </div>
       </div>
@@ -112,11 +112,11 @@
           </figure>
         </div>
         <div class="col-md-6">
-          <p> While each kit is unique in size and features, all are designed for simple and intuitive assembly. This ensures quick modifications during wiring, plumbing, and future maintenance.</p>
+          <p>Each layout was restructured to support efficient installation, modular upgrades, and minimal operator dependency. Joinery placement, part ID tags, and fastener locations were engineered in CAD for precision routing and long-term durability.</p>
            <ul>
-              <li>Cam-and-pin fasteners allow sturdy, non-destructive assembly</li>
-              <li>Fastener locations are optimized to prevent ply delamination and maximize structural lifespan</li>
-              <li>Internal cuts (doors, catches) are pre-machined within each part to save time and material</li>
+              <li>Cam-lock systems modeled and placed using CNC-ready reference features</li>
+              <li>Fastener zones optimized to preserve ply structure and assembly repeatability</li>
+              <li>All internal openings routed with tool clearance logic for zero hand-finishing</li>
            </ul>
         </div>
       </div>
@@ -130,12 +130,12 @@
           </figure>
         </div>
         <div class="col-md-6">
-          <h4>VW T5.6 LWB Kit</h4>
-          <p>Built for families and long-haul travelers, this extended layout includes sleeping for four and a full-length kitchen—ensuring space efficiency without compromising comfort.</p>
+          <h4>Production-Ready Layout with DFM Features</h4>
+          <p>Reconfigured the kits to maximize board utilization, simplify access zones, and improve modularity. Focus was placed on reducing cut complexity, isolating utility features, and improving downstream manufacturability.</p>
           <ul>
-            <li>Parts nested for 2440×1220 mm plywood with minimal waste</li>
-            <li>Electrical modules isolated for access and safety</li>
-            <li>Three configurable packages: Bronze, Silver, Gold (varying features & price)</li>
+            <li>Nesting strategy tuned for standard plywood sheet sizes (2440×1220 mm)</li>
+            <li>Power and utility zones isolated for safety and simplified access</li>
+            <li>Feature packages defined to enable scalable product tiers</li>
           </ul>
         </div>
       </div>
@@ -148,11 +148,11 @@
           </figure>
         </div>
         <div class="col-md-6">
-          <p>  Designed to support off-grid use, this package includes water storage solutions, a fully featured kitchen, and the ability to integrate appliances like diesel heaters and stoves. Storage and usability were balanced against compactness.</p>
+          <p>Component geometry was updated to include appliance cavities, wire routing access, and multi-material integration for worktops. Structural loads and bracket mounting zones were accounted for in CAD.</p>
           <ul>
-           <li>Dedicated compartments for water tanks and utilities</li>
-           <li>Kitchen pre-routed for microwave, gas locker, and sink</li>
-           <li>Off-grid options: solar, diesel heating, and 12V electronics</li>
+           <li>Appliance locations pre-machined into panel assemblies</li>
+           <li>Internal routing zones defined for cables, tanks, and control hardware</li>
+           <li>Modular framing allowed component upgrades without redesign</li>
           </ul>
         </div>
       </div>
@@ -166,12 +166,12 @@
           </figure>
         </div>
         <div class="col-md-6">
-          <h4>VW T5.6 U-Shape Kit</h4>
-          <p>Designed for campers seeking maximum comfort in compact vans, this U-shaped layout combines seating, kitchen, and sleeping zones—reducing the need for overhead cabinets and enabling a full bed setup with no extra hardware.</p>
+          <h4>CNC Tooling Strategy for Clean Finishing</h4>
+          <p>Compression tooling was used to eliminate bit swapping between upcut and downcut passes, maintaining surface quality across both faces. Separate feed and spindle settings were tuned for birch plywood and bamboo to prevent edge burning and delamination.</p>
           <ul>
-            <li>Removable center table converts to bed support using slotted guides</li>
-            <li>Integrated kitchen top with sink and hob provision</li>
-            <li>Curved access cutouts and radiused corners for user comfort</li>
+            <li>Compression bits used to minimize tear-out on both faces</li>
+            <li>Cut depth, RPM, and feed rates calibrated by material type</li>
+            <li>Toolpath optimized to avoid tool wear and manual finishing</li>
           </ul>
         </div>
       </div>
@@ -184,11 +184,11 @@
           </figure>
         </div>
         <div class="col-md-6">
-          <p>Built around a self-contained storage system, this layout maximizes floor-level utility without relying on overhead cabinets. Every volume is engineered for multi-use, efficient routing, and ergonomic installation.</p>
+          <p>All components were processed in VCarve Pro using reusable toolpath templates for profiling, pocketing, and part ID engraving. Scrap protective plywood from packaging was used for real-scale test cuts, enabling fast validation before final machining.</p>
            <ul>
-             <li>Under-seat storage with integrated hinge and catch cutouts</li>
-             <li>Side step built into cabinetry for expanded usable space</li>
-             <li>Optional L-shaped kitchen top upgrade to increase work surface area</li>
+             <li>Reusable VCarve templates ensured CNC consistency</li>
+             <li>Fitment trials performed on recycled plywood blanks</li>
+             <li>Embedded engravings improved part identification and orientation</li>
            </ul>
           
         </div>
@@ -203,12 +203,12 @@
           </figure>
         </div>
         <div class="col-md-6">
-          <h4>Toolpath Generation in VCarve Pro</h4>
-          <p> Each design was exported as 2D DXF from SolidWorks and prepared for machining in VCarve Pro. I assigned pocketing, profiling, engraving, and drilling operations with feed and speed settings optimized for clean edges and short cycle times.</p>
+          <h4>Machining Outcome and Install Feedback</h4>
+          <p>The CNC-manufactured kits were assembled without any rework. All components fit with high dimensional accuracy, and multiple batches were produced using the same toolpath set with consistent results.</p>
           <ul>
-           <li>Compression bits used to avoid tool changes between upcut/downcut</li>
-           <li>Part tags and engraving embedded to reduce labeling errors</li>
-           <li>Optimized layout and nesting parameters to reduce material wastage</li>
+           <li>~90% reduction in post-processing effort (sanding, trimming)</li>
+           <li>Toolpath workflow reused across different van models</li>
+           <li>Field installs confirmed tight fit and minimal in-transit rattling</li>
           </ul>
         </div>
       </div>
@@ -217,7 +217,7 @@
      <div class="row justify-content-center mb-5">
       <div class="col-lg-10">
        <div class="p-4 bg-light shadow-sm rounded text-center">
-        <h4 class="mb-3">End-to-End Design Workflow</h4>
+        <h4 class="mb-3">Design-to-Manufacturing Execution</h4>
          <p class="mb-0 fs-6">
            Each campervan kit is developed through a standardized and repeatable pipeline:<br>
            <strong>
@@ -238,8 +238,8 @@
             <ul class="list-unstyled">
               <li><strong>Project Date:</strong> Ongoing (2024–Present)</li>
               <li><strong>Software:</strong> SolidWorks, VCarve Pro</li>
-              <li><strong>Category:</strong> Modular Furniture Design</li>
-              <li><strong>Focus Areas:</strong> Parametric CAD, Joinery Modeling, CAM Toolpaths, CNC Optimization</li>
+              <li><strong>Category:</strong>CAD-CAM Furniture Engineering</li>
+              <li><strong>Focus Areas:</strong>Flat-Pack CAD Remastering, Toolpath Design, CAM Tuning, Production Nesting</li>
             </ul>
           </div>
         </div>
